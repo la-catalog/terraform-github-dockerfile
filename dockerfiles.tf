@@ -5,8 +5,8 @@ resource "github_repository_file" "python_cronjob" {
   file                = "Dockerfile"
   content             = file("./res/python_cronjob.Dockerfile")
   commit_message      = "Update Dockerfile"
-  commit_author       = "actions"
-  commit_email        = "actions@github.com"
+  commit_author       = "github-actions"
+  commit_email        = "github-actions[bot]@users.noreply.github.com"
   overwrite_on_create = true
 }
 
@@ -17,7 +17,7 @@ resource "github_repository_file" "python_deployment" {
   file                = "Dockerfile"
   content             = file("./res/python_deployment.Dockerfile")
   commit_message      = "Update Dockerfile"
-  commit_author       = "actions"
-  commit_email        = "actions@github.com"
+  commit_author       = "github-actions"
+  commit_email        = "github-actions[bot]@users.noreply.github.com"
   overwrite_on_create = true
 }
