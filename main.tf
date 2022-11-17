@@ -18,6 +18,10 @@ provider "github" {
   read_delay_ms = 1000
 }
 
+data "github_repositories" "python_api" {
+  query = "org:la-catalog topic:python topic:api"
+}
+
 data "github_repositories" "python_cronjob" {
   query = "org:la-catalog topic:python topic:cronjob"
 }

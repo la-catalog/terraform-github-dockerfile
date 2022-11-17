@@ -20,4 +20,4 @@ RUN pdm install
 COPY . /project/
 
 # Run
-CMD ["python", "project/main.py"]
+CMD ["python", "-m", "uvicorn", "project/main:app", "--host", "0.0.0.0", "--port", "5000"]
